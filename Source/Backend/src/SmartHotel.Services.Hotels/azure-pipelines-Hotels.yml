@@ -1,0 +1,39 @@
+# Docker image
+# Build a Docker image to deploy, run, or push to a container registry.
+# Add steps that use Docker Compose, tag images, push to a registry, run an image, and more
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+pool:
+  name: 'smarthotelprod'
+
+variables:
+  imageName: 'smarthotels/Hotels:$(Build.BuildId)'
+  
+steps:
+#- script: docker build -f Dockerfile -t $(imageName) .
+- task: Docker@1
+  displayName: 'docker build'
+  inputs:
+    azureSubscriptionEndpoint: RMPM
+    azureContainerRegistry: shregistry.azurecr.io
+    dockerFile: Source/Backend/src/SmartHotel.Services.Hotels/Dockerfile
+    useDefaultContext: false
+    buildContext: Source/Backend/src
+    imageName: '$(imageName)'
+    includeLatestTag: true
+- task: Docker@1
+  displayName: 'docker push with BuildId as tag'
+  inputs:
+    azureSubscriptionEndpoint: RMPM
+    azureContainerRegistry: shregistry.azurecr.io
+    command: 'Push an image'
+    imageName: '$(imageName)'
+    includeLatestTag: true
+#- task: Docker@1
+#  displayName: 'docker push with latest as tag'
+#  inputs:
+#    azureSubscriptionEndpoint: RMPM
+#    azureContainerRegistry: shregistry.azurecr.io
+#    command: 'Push an image'
+#    imageName: 'smarthotels/Hotels:latest'
+#    includeLatestTag: true
