@@ -21,7 +21,7 @@ spec:
              name: externalcfg
              key: ApplicationInsights__InstrumentationKey  
         - name: k8sname
-          value: smarthotel360             
+          value: smarthotel             
         - name: ASPNETCORE_ENVIRONMENT
           value: Development
         - name: PATH_BASE
@@ -94,7 +94,7 @@ spec:
              name: externalcfg
              key: ApplicationInsights__InstrumentationKey        
         - name: k8sname
-          value: smarthotel360             
+          value: smarthotel          
         - name: ASPNETCORE_ENVIRONMENT
           value: Development        
         - name: PATH_BASE
@@ -152,7 +152,7 @@ spec:
              name: externalcfg
              key: ApplicationInsights__InstrumentationKey      
         - name: k8sname
-          value: smarthotel360             
+          value: smarthotel            
         - name: PATH_BASE
           value: /suggestions-api
         - name: PORT
@@ -192,7 +192,7 @@ spec:
              name: externalcfg
              key: ApplicationInsights__InstrumentationKey  
         - name: k8sname
-          value: smarthotel360             
+          value: smarthotel          
         - name: PATH_BASE
           value: /configuration-api
         - name: ASPNET_CONFIGURATION
@@ -233,7 +233,7 @@ spec:
              name: externalcfg
              key: ApplicationInsights__InstrumentationKey      
         - name: k8sname
-          value: smarthotel360             
+          value: smarthotel            
         - name: PORT
           value: "80"
         - name: ASPNET_CONFIGURATION
@@ -283,7 +283,7 @@ spec:
              name: externalcfg
              key: ApplicationInsights__InstrumentationKey  
         - name: k8sname
-          value: smarthotel360        
+          value: smarthotel   
         - name: ASPNETCORE_ENVIRONMENT
           value: Development
         - name: PATH_BASE
@@ -336,7 +336,7 @@ spec:
              name: externalcfg
              key: ApplicationInsights__InstrumentationKey      
         - name: k8sname
-          value: smarthotel360             
+          value: smarthotel             
         - name: PORT
           value: "80"
         - name: ASPNET_CONFIGURATION
@@ -386,7 +386,7 @@ spec:
              name: externalcfg
              key: ApplicationInsights__InstrumentationKey  
         - name: k8sname
-          value: smarthotel360        
+          value: smarthotel        
         - name: ASPNETCORE_ENVIRONMENT
           value: Development
         - name: PATH_BASE
@@ -424,7 +424,7 @@ spec:
              name: externalcfg
              key: ApplicationInsights__InstrumentationKey  
         - name: k8sname
-          value: smarthotel360        
+          value: smarthotel       
         - name: ASPNETCORE_ENVIRONMENT
           value: Development
         - name: PATH_BASE
