@@ -43,7 +43,7 @@ namespace SmartHotel.Services.Hotels.Queries
         {
             return Task.FromResult(new[]
             {
-                new CityResult() { Id = 10, Name = "New York", Country = "United States"},
+                //new CityResult() { Id = 10, Name = "New York", Country = "United States"},
                 new CityResult() { Id = 12, Name = "Newark", Country = "United States"},
                 new CityResult() { Id = 13, Name = "New Haven", Country = "United States"},
                 new CityResult() { Id = 14, Name = "New Jersy", Country = "United States"},
